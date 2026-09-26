@@ -3,23 +3,23 @@ import { createRoot } from "react-dom/client";
 import { ArrowDown, ArrowUpRight, Clock3, Instagram, MapPin, Menu, X } from "lucide-react";
 import "./styles.css";
 
-const local = (name: string) => `/assets/${name}`;
+const local = (name: string) => `${import.meta.env.BASE_URL}assets/${name}`;
 
 const images = {
-  hero: "public/assets/0.png",
-  cafe: "public/assets/3.jpg",
-  vibe: "public/assets/4.jpg",
+  hero: `${import.meta.env.BASE_URL}assets/0.png`,
+  cafe: `${import.meta.env.BASE_URL}assets/3.jpg`,
+  vibe: `${import.meta.env.BASE_URL}assets/4.jpg`,
   owner: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmLeLQzq1c76s2mVai4MTPd3BWfOad7VR7BXCNAgNBFgbmbVAus63UhbFQFUpZDwSWMKp0Bcbsc0E-7JZCJLL_TtnWR4o1mbwzy1riy7XMC9tqb2OT3vHe8-cUjbC9nJrl-dQ8DXxnhYLY=w224-h298-k-no",
   ritual: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=88",
   place: "https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=88",
   room: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1600&q=85",
   coffee: "https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=90",
   pastry: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=90",
-  one: "public/assets/1.jpg",
-  two: "public/assets/2.jpg",
-  three: "public/assets/3.jpg",
-  four: "public/assets/4.jpg",
-  five: "public/assets/5.png",
+  one: `${import.meta.env.BASE_URL}assets/1.jpg`,
+  two: `${import.meta.env.BASE_URL}assets/2.jpg`,
+  three: `${import.meta.env.BASE_URL}assets/3.jpg`,
+  four: `${import.meta.env.BASE_URL}assets/4.jpg`,
+  five: `${import.meta.env.BASE_URL}assets/5.png`,
 
 };
 
@@ -176,7 +176,7 @@ function App() {
         <button className="brand" onClick={() => go("top")} aria-label="Pleno Café home">
           <div className="brand">
             <img
-              src="/logo.jpg"
+              src={`${import.meta.env.BASE_URL}logo.jpg`}
               alt="Pleno Café logo"
               className="brand-logo"
             />
